@@ -7,4 +7,5 @@ include_directories(include/JPLIB)
 
 add_library(jplib STATIC
         source/library.cpp
+        include/JPLIB/cwd.h
 )
