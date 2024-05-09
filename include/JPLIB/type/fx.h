@@ -1,5 +1,9 @@
 #pragma once
 
+/*
+ * Idea for this block below is from here:
+ * https://stackoverflow.com/questions/8965908/c-f32-include-file
+ */
 #include <climits>
 static_assert(sizeof(float)*CHAR_BIT==32, "Warning: A float is not 32 bit on this architecture! Continuing may lead to unforeseen behavior!");
 static_assert(sizeof(double)*CHAR_BIT==64, "Warning: A double is not 64 bit on this architecture! Continuing may lead to unforeseen behavior!");
