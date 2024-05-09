@@ -3,9 +3,8 @@ project(jplib)
 
 set(CMAKE_CXX_STANDARD 23)
 
-include_directories(include)
+include_directories(include/JPLIB)
 
-add_library(jplib STATIC source/library.cpp
-        include/type/ix.h
-        include/type/fx.h
-        include/type/ux.h)
+add_library(jplib STATIC
+        source/library.cpp
+)
