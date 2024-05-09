@@ -6,5 +6,3 @@ set(CMAKE_CXX_STANDARD 23)
 include_directories(include)
 
 add_library(jplib STATIC source/library.cpp)
-
-
