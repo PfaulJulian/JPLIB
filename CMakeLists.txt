@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 23)
 include_directories(include)
 
 add_library(jplib STATIC source/library.cpp
-        include/type/ix.h)
+        include/type/ix.h
+        include/type/fx.h
+        include/type/ux.h)
