@@ -1,11 +1,13 @@
-cmake_minimum_required(VERSION 3.25)
-project(jplib)
+cmake_minimum_required(VERSION 3.28)
 
-set(CMAKE_CXX_STANDARD 23)
-
-include_directories(include/JPLIB)
-
-add_library(jplib STATIC
-        source/library.cpp
-        include/JPLIB/cwd.h
+project(JPLib
+        VERSION 1.0
+        DESCRIPTION "The JPLib, a C++ library made by Julian Pfaul."
+        LANGUAGES CXX
 )
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_subdirectory(include)
+add_subdirectory(source)
+add_subdirectory(test)
